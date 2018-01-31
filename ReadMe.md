@@ -4,23 +4,18 @@
 
 Version 2.9.0, 2018-01-26
 
-Wayne
-Warthen  
+Wayne Warthen  
 [wwarthen@gmail.com](mailto:mailto:wwarthen@gmail.com "mailto:wwarthen@gmail.com")
 
-**Download:**
+__Download:__
 
-  - [RomWBW v2.9.0 Distribution
-    Package](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw-2.9.0-package.zip "software:firmwareos:romwbw:romwbw-2.9.0-package.zip (33.8 MB)")
-  - [RomWBW Architecture
-    Document](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw_architecture.pdf "software:firmwareos:romwbw:romwbw_architecture.pdf (1 MB)")
+  - [RomWBW v2.9.0 Distribution Package](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw-2.9.0-package.zip "software:firmwareos:romwbw:romwbw-2.9.0-package.zip (33.8 MB)")
+  - [RomWBW Architecture Document](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw_architecture.pdf "software:firmwareos:romwbw:romwbw_architecture.pdf (1 MB)")
 
-**Related pages:**
+__Related pages:__
 
-  - [RomWBW
-    Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
-  - [Z-System
-    Notes](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:zsystem "software:firmwareos:romwbw:zsystem")
+  - [RomWBW Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
+  - [Z-System Notes](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:zsystem "software:firmwareos:romwbw:zsystem")
   - [Errata](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:errata "software:firmwareos:romwbw:errata")
 
 ## Summary
@@ -46,15 +41,15 @@ image. All source and build tools are included in the distribution. The
 build scripts run under any modern 32 or 64 bit version of Microsoft
 Windows.
 
-John Coffman’s UNA hardware BIOS is fully supported by RomWBW. See the
+John Coffman's UNA hardware BIOS is fully supported by RomWBW. See the
 section below for more information on running RomWBW on top of UNA.
 
 ## Installation
 
-In general, you will just program your system’s ROM with the appropriate
+In general, you will just program your system's ROM with the appropriate
 ROM image from the RomWBW distribution. This can be done with a ROM
 programmer. Alternatively, if your system supports in-situ ROM
-programming, you can use Will Sowerbutts’ FLASH application which has
+programming, you can use Will Sowerbutts' FLASH application which has
 been included in recent RomWBW distributions.
 
 The pre-built ROM images will automatically detect and support a
@@ -69,19 +64,18 @@ computer (Windows, Mac, Linux, etc.). Unzip the archive using any of the
 common zip management applications. You will see that the distribution
 is broken up into a few sub-directories. The Binary directory contains
 the pre-built ROM images. Based on the table below, pick the appropriate
-ROM
-image:
+ROM image:
 
-| Platform  | ROM Image File | Built-in Device Support                                                                                   |
-| --------- | -------------- | --------------------------------------------------------------------------------------------------------- |
-| SBC V1/V2 | SBC\_std.rom   | Supports onboard PPIDE disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                            |
-| Zeta V1   | ZETA\_std.rom  | Supports ParPortProp (video, kbd, SD Card)                                                                |
-| Zeta V2   | ZETA2\_std.rom | Supports ParPortProp (video, kbd, SD Card)                                                                |
-| N8        | N8\_std.rom    | Supports onboard SD Card, video, keyboard; production board assumed (date code \>= 2312)                  |
-| Mark IV   | MK4\_std.rom   | Supports onboard SD Card, IDE Disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                     |
-| RC2014    | RC\_std.rom    | Requires Scott Baker 512KB RAM/ROM module; supports ACIA, SIO/2, Compact Flash, PPIDE, and Floppy modules |
+| Platform       | ROM&nbsp;Image&nbsp;File | Built-in Device Support                                                                                   |
+| -------------- | ------------------------ | --------------------------------------------------------------------------------------------------------- |
+| SBC&nbsp;V1/V2 | SBC\_std.rom             | Supports onboard PPIDE disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                            |
+| Zeta&nbsp;V1   | ZETA\_std.rom            | Supports ParPortProp (video, kbd, SD Card)                                                                |
+| Zeta&nbsp;V2   | ZETA2\_std.rom           | Supports ParPortProp (video, kbd, SD Card)                                                                |
+| N8             | N8\_std.rom              | Supports onboard SD Card, video, keyboard; production board assumed (date code \>= 2312)                  |
+| Mark&nbsp;IV   | MK4\_std.rom             | Supports onboard SD Card, IDE Disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                     |
+| RC2014         | RC\_std.rom              | Requires Scott Baker 512KB RAM/ROM module; supports ACIA, SIO/2, Compact Flash, PPIDE, and Floppy modules |
 
-Your system does **not** need to have all the devices listed above to
+Your system&nbsp;does **not** need to have all the devices listed above to
 use the pre-built ROM. The devices will be detected and used only if
 present. All you need to have is the CPU board with ROM/RAM and a serial
 port. All pre-built ROM images are simple 512KB binary images. If your
@@ -105,7 +99,7 @@ device.
 ## Upgrading
 
 Program a new ROM chip from an image in the new distribution. Install
-the new ROM chip and boot your system. At the boot loader “Boot:”
+the new ROM chip and boot your system. At the boot loader "Boot:"
 prompt, select either CP/M or Z-System to load the corresponding OS
 directly from ROM.
 
@@ -159,7 +153,7 @@ of these programs should be updated when upgrading to a new ROM version:
   - XM.COM
   - MODE.COM
   - RTC.COM
-
+    
 ## Usage Instructions
 
 A typical set of CP/M-80 2.2 and Z-System applications are included on
@@ -181,24 +175,22 @@ RomWBW:
 | FORMAT.COM   | Will someday be a command line tool to format floppy disks. Currently does nothing\!                                                 |
 | MODE.COM     | Reconfigures serial ports dynamically.                                                                                               |
 | XM.COM       | XModem file transfer program adapted to hardware. Automatically uses primary serial port on system.                                  |
-| FLASH.COM    | Will Sowerbutts’ in-situ ROM programming utility.                                                                                    |
+| FLASH.COM    | Will Sowerbutts' in-situ ROM programming utility.                                                                                    |
 
-Please see the [RomWBW
-Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
+Please see the [RomWBW Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
 page for more information on using these applications.
 
-Check the
-[Errata](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:errata "software:firmwareos:romwbw:errata")
+Check the [Errata](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:errata "software:firmwareos:romwbw:errata")
 page for current usage notes.
 
 ## UNA Hardware BIOS
 
 John Coffman has produced a new generation of hardware BIOS called UNA.
-The standard RomWBW distribution includes it’s own hardware BIOS.
+The standard RomWBW distribution includes it's own hardware BIOS.
 However, RomWBW can alternatively be constructed with UNA as the
 hardware BIOS portion of the ROM. If you wish to use the UNA variant of
 RomWBW, then just program your ROM with the ROM image called
-“UNA\_std.rom” in the Binary directory. This one image is suitable on
+"UNA\_std.rom" in the Binary directory. This one image is suitable on
 **all** of the platforms and hardware UNA supports.
 
 UNA is customized dynamically using a ROM based setup routine and the
@@ -215,16 +207,15 @@ things that UNA does not support:
   - Terminal Emulation
   - Zeta 1 and N8 Systems
   - Some older support boards
-
+    
 The UNA version embedded in RomWBW is the latest production release of
-UNA. RomWBW will be updated with John’s upcoming UNA release with
+UNA. RomWBW will be updated with John's upcoming UNA release with
 support for VGA3 as soon as it reaches production status.
 
-Please refer to the [UNA BIOS Firmware
-Page](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:una:start "software:firmwareos:una:start")
+Please refer to the [UNA BIOS Firmware Page](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:una:start "software:firmwareos:una:start")
 for more information on UNA.
 
-## CP/M vs. Z-System
+## CP/M vs. Z-System
 
 There are two OS variants included in this distribution and you may
 choose which one you prefer to use. Both variants are now included in
@@ -232,22 +223,20 @@ the pre-built ROM images. You will be given the choice to boot either
 CP/M or Z-System at startup.
 
 The traditional Digital Research (DRI) CP/M OS is the first choice. The
-Doc directory contains a manual for CP/M usage (“CPM Manual.pdf”). If
+Doc directory contains a manual for CP/M usage ("CPM Manual.pdf"). If
 you are new to the RetroBrew Computer systems, I would currently
 recommend using the CP/M variant to start with simply because it has
 gone through more testing and you are less likely to encounter problems.
 
-The other choice is to use the most popular non-DRI CP/M “clone” which
+The other choice is to use the most popular non-DRI CP/M "clone" which
 is generally referred to as Z-System. Z-System is intended to be an
 enhanced version of CP/M and should run all CP/M 2.2 applications. It is
 optimized for the Z80 CPU (as opposed to 8080 for CP/M) and has some
 significant improvements such as date/time stamping of files. For
 further information on the RomWBW implementation of Z-System, see the
-wiki page [Z-System
-Notes](https://www.retrobrewcomputers.org/doku.php?id=playground:wwarthen:zsystem "playground:wwarthen:zsystem").
+wiki page [Z-System Notes](https://www.retrobrewcomputers.org/doku.php?id=playground:wwarthen:zsystem "playground:wwarthen:zsystem").
 Additionally, the official documentation for Z-System is included in the
-RomWBW distribution Doc directory (“ZSDOS Manual.pdf” and “ZCPR
-Manual.pdf”).
+RomWBW distribution Doc directory ("ZSDOS Manual.pdf" and "ZCPR Manual.pdf").
 
 ## ROM Customization
 
@@ -282,13 +271,13 @@ welcome.
 ## Distribution Directory Layout
 
 The RomWBW distribution is a compressed zip archive file organized in a
-set of directories. Each of these directories has it’s own ReadMe.txt
+set of directories. Each of these directories has it's own ReadMe.txt
 file describing the contents in detail. In summary, these directories
 are:
 
 | Directory | Description                                                                                                                             |
 | --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| Binary    | The final output files of the build process are placed here. Most importantly, are the ROM images with the file names ending in “.rom”. |
+| Binary    | The final output files of the build process are placed here. Most importantly, are the ROM images with the file names ending in ".rom". |
 | Doc       | Contains various detailed documentation including the operating systems, RomWBW architecture, etc.                                      |
 | Source    | Contains the source code files used to build the software and ROM images.                                                               |
 | Tools     | Contains the MS Windows programs that are used by the build process or that may be useful in setting up your system.                    |

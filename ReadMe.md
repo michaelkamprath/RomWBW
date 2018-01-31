@@ -72,7 +72,7 @@ the pre-built ROM images. Based on the table below, pick the appropriate
 ROM
 image:
 
-| Platform  | ROM Image File | Built-in Device Support                                                                                   |
+| Platform  | ROM Image File | Built-in Device Support                                                                                   |
 | --------- | -------------- | --------------------------------------------------------------------------------------------------------- |
 | SBC V1/V2 | SBC\_std.rom   | Supports onboard PPIDE disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                            |
 | Zeta V1   | ZETA\_std.rom  | Supports ParPortProp (video, kbd, SD Card)                                                                |

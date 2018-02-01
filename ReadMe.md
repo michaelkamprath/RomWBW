@@ -1,3 +1,9 @@
+---
+fontfamily: arev
+geometry: top=1in, bottom=1in, left=1in, right=1in
+---
+
+
 # RomWBW
 
 #### Z80/Z180 System Software
@@ -9,14 +15,14 @@ Wayne Warthen
 
 __Download:__
 
-  - [RomWBW v2.9.0 Distribution Package](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw-2.9.0-package.zip "software:firmwareos:romwbw:romwbw-2.9.0-package.zip (33.8 MB)")
-  - [RomWBW Architecture Document](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw_architecture.pdf "software:firmwareos:romwbw:romwbw_architecture.pdf (1 MB)")
+  * [RomWBW v2.9.0 Distribution Package](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw-2.9.0-package.zip "software:firmwareos:romwbw:romwbw-2.9.0-package.zip (33.8 MB)")
+  * [RomWBW Architecture Document](https://www.retrobrewcomputers.org/lib/exe/fetch.php?media=software:firmwareos:romwbw:romwbw_architecture.pdf "software:firmwareos:romwbw:romwbw_architecture.pdf (1 MB)")
 
 __Related pages:__
 
-  - [RomWBW Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
-  - [Z-System Notes](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:zsystem "software:firmwareos:romwbw:zsystem")
-  - [Errata](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:errata "software:firmwareos:romwbw:errata")
+  * [RomWBW Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
+  * [Z-System Notes](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:zsystem "software:firmwareos:romwbw:zsystem")
+  * [Errata](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:errata "software:firmwareos:romwbw:errata")
 
 ## Summary
 
@@ -66,16 +72,16 @@ is broken up into a few sub-directories. The Binary directory contains
 the pre-built ROM images. Based on the table below, pick the appropriate
 ROM image:
 
-| Platform       | ROM&nbsp;Image&nbsp;File | Built-in Device Support                                                                                   |
-| -------------- | ------------------------ | --------------------------------------------------------------------------------------------------------- |
-| SBC&nbsp;V1/V2 | SBC\_std.rom             | Supports onboard PPIDE disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                            |
-| Zeta&nbsp;V1   | ZETA\_std.rom            | Supports ParPortProp (video, kbd, SD Card)                                                                |
-| Zeta&nbsp;V2   | ZETA2\_std.rom           | Supports ParPortProp (video, kbd, SD Card)                                                                |
-| N8             | N8\_std.rom              | Supports onboard SD Card, video, keyboard; production board assumed (date code \>= 2312)                  |
-| Mark&nbsp;IV   | MK4\_std.rom             | Supports onboard SD Card, IDE Disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card)                     |
+| **Platform** | **ROM&nbsp;Image&nbsp;File** | **Built-in Device Support** |
+| ---------- | ------------- | ------------------------------------- |
+| SBC&nbsp;V1/V2 | SBC\_std.rom             | Supports onboard PPIDE disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card) |
+| Zeta&nbsp;V1   | ZETA\_std.rom            | Supports ParPortProp (video, kbd, SD Card) |
+| Zeta&nbsp;V2   | ZETA2\_std.rom           | Supports ParPortProp (video, kbd, SD Card) |
+| N8             | N8\_std.rom              | Supports onboard SD Card, video, keyboard; production board assumed (date code \>= 2312) |
+| Mark&nbsp;IV   | MK4\_std.rom             | Supports onboard SD Card, IDE Disk, VGA3/CVDU video/kbd, PropIO (video, kbd, SD Card) |
 | RC2014         | RC\_std.rom              | Requires Scott Baker 512KB RAM/ROM module; supports ACIA, SIO/2, Compact Flash, PPIDE, and Floppy modules |
 
-Your system&nbsp;does **not** need to have all the devices listed above to
+Your system does **not** need to have all the devices listed above to
 use the pre-built ROM. The devices will be detected and used only if
 present. All you need to have is the CPU board with ROM/RAM and a serial
 port. All pre-built ROM images are simple 512KB binary images. If your
@@ -166,16 +172,16 @@ The following custom applications are included on the ROM disk to
 enhance the operation of
 RomWBW:
 
-| Appplication | Description                                                                                                                          |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------ |
-| ASSIGN.COM   | Add, change, and delete drive letter assignments. Use ASSIGN /? for usage instructions.                                              |
-| SYSCOPY.COM  | Copy system image to a device to make it bootable. Use SYSCOPY with no parms for usage instructions.                                 |
-| FDU.COM      | Format and test floppy disks. Menu driven interface.                                                                                 |
+| **Appplication** | **Description** |
+| ------------ | -------------------------------------------------- |
+| ASSIGN.COM   | Add, change, and delete drive letter assignments. Use ASSIGN /? for usage instructions. |
+| SYSCOPY.COM  | Copy system image to a device to make it bootable. Use SYSCOPY with no parms for usage instructions. |
+| FDU.COM      | Format and test floppy disks. Menu driven interface. |
 | OSLDR.COM    | Load a new OS on the fly. For example, you can switch to Z-System when running CP/M. Use OSLDR with no parms for usage instructions. |
-| FORMAT.COM   | Will someday be a command line tool to format floppy disks. Currently does nothing\!                                                 |
-| MODE.COM     | Reconfigures serial ports dynamically.                                                                                               |
-| XM.COM       | XModem file transfer program adapted to hardware. Automatically uses primary serial port on system.                                  |
-| FLASH.COM    | Will Sowerbutts' in-situ ROM programming utility.                                                                                    |
+| FORMAT.COM   | Will someday be a command line tool to format floppy disks. Currently does nothing\! |
+| MODE.COM     | Reconfigures serial ports dynamically. |
+| XM.COM       | XModem file transfer program adapted to hardware. Automatically uses primary serial port on system. |
+| FLASH.COM    | Will Sowerbutts' in-situ ROM programming utility. |
 
 Please see the [RomWBW Applications](https://www.retrobrewcomputers.org/doku.php?id=software:firmwareos:romwbw:apps "software:firmwareos:romwbw:apps")
 page for more information on using these applications.
@@ -275,12 +281,12 @@ set of directories. Each of these directories has it's own ReadMe.txt
 file describing the contents in detail. In summary, these directories
 are:
 
-| Directory | Description                                                                                                                             |
-| --------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **Directory** | **Contents** |
+| ------------ | -------------------------------------------------- |
 | Binary    | The final output files of the build process are placed here. Most importantly, are the ROM images with the file names ending in ".rom". |
-| Doc       | Contains various detailed documentation including the operating systems, RomWBW architecture, etc.                                      |
-| Source    | Contains the source code files used to build the software and ROM images.                                                               |
-| Tools     | Contains the MS Windows programs that are used by the build process or that may be useful in setting up your system.                    |
+| Doc       | Contains various detailed documentation including the operating systems, RomWBW architecture, etc. |
+| Source    | Contains the source code files used to build the software and ROM images. |
+| Tools     | Contains the MS Windows programs that are used by the build process or that may be useful in setting up your system. |
 
 ## Acknowledgements
 
